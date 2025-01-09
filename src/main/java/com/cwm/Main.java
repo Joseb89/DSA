@@ -1,20 +1,16 @@
 package com.cwm;
 
-import com.cwm.binarytree.MyBinaryTree;
+import com.cwm.avltree.MyAVLTree;
 
 public class Main {
 
     public static void main(String[] args) {
-        MyBinaryTree binaryTree = new MyBinaryTree();
+        MyAVLTree avlTree = new MyAVLTree();
 
-        binaryTree.insert(7);
-        binaryTree.insert(4);
-        binaryTree.insert(9);
-        binaryTree.insert(1);
-        binaryTree.insert(6);
-        binaryTree.insert(8);
-        binaryTree.insert(10);
+        avlTree.insert(10);
+        avlTree.insert(30);
+        avlTree.insert(20);
 
-        System.out.println(binaryTree.areSiblings(8, 10));
+        System.out.println(avlTree);
     }
 }
